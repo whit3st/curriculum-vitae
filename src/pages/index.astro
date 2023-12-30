@@ -1,16 +1,35 @@
 ---
-
+import ResumeData from "../data/data.json";
+import MainLayout from "../layouts/main-layout.astro";
+import PersonalInformation from "../components/personal-information/personal-information";
+import Work from "../components/work/work";
+import Volunteer from "../components/volunteer/volunteer";
+import Education from "../components/education/education";
+import Awards from "../components/awards/awards";
+import Certificates from "../components/certificates/certificates";
+import Publications from "../components/publications/publications";
+import Skills from "../components/skills/skills";
+import Languages from "../components/languages/languages";
+import Interests from "../components/interests/interests";
+import References from "../components/references/references";
+import Projects from "../components/projects/projects";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<MainLayout
+    title="CV"
+    desc="CV desc"
+    resume={ResumeData}
+>
+    <PersonalInformation />
+    <Work />
+    <Education />
+    <Volunteer />
+    <Awards />
+    <Certificates />
+    <Publications />
+    <Skills />
+    <Languages />
+    <Interests />
+    <References />
+    <Projects />
+</MainLayout>

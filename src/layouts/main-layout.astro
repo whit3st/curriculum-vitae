@@ -1,0 +1,74 @@
+---
+import ResumeContext from "../context-provider/resume-context";
+import ThemeContext from "../context-provider/theme-context";
+import { themes } from "../data/themes";
+import type { ThemeNames } from "../data/themes";
+const { title, desc, resume } = Astro.props as {
+    title: string;
+    desc: string;
+    resume: any;
+};
+
+const selectedTheme = import.meta.env.PUBLIC_SELECTED_THEME as ThemeNames;
+---
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width"
+        />
+        <meta
+            name="generator"
+            content={Astro.generator}
+        />
+        <meta
+            name="description"
+            content={desc}
+        />
+        <title>{title}</title>
+        <!-- FONTS -->
+        <style is:global>
+            @font-face {
+                font-family: "Inter";
+                src: url("../fonts/Inter.ttf") format("truetype");
+                font-display: swap;
+            }
+            @font-face {
+                font-family: "Monospace";
+                src: url("../fonts/SpaceMono-Regular.ttf") format("truetype");
+                font-display: swap;
+            }
+        </style>
+        <!-- PREFERS COLOR SCHEME / DARK MODE -->
+        <script>
+            // PREFERS DARK COLOR SCHEME
+            if (
+                window.matchMedia &&
+                window.matchMedia("(prefers-color-scheme: dark)").matches
+            ) {
+                // To allow users who prefer dark color scheme,
+                //uncomment the line below
+                // document.documentElement.classList.add("dark");
+            }
+            // TAILWIND DARK MODE
+            if (import.meta.env.PUBLIC_DARK_MODE === "true") {
+                // To switch to dark theme using Tailwind,
+                // uncomment the line below
+                // document.documentElement.classList.add("dark");
+            }
+        </script>
+    </head>
+    <ThemeContext.Provider value={themes}>
+        <ResumeContext.Provider value={resume}>
+            <body class={themes[selectedTheme].body + " py-14"}>
+                <main class="container flex flex-col gap-10 font-in">
+                    <slot />
+                </main>
+            </body>
+        </ResumeContext.Provider>
+    </ThemeContext.Provider>
+
+
+</html>

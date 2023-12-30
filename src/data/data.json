@@ -1,0 +1,175 @@
+{
+    "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+    "basics": {
+        "name": "Alican Akyıldız",
+        "label": "Jr. Frontend Developer",
+        "image": "https://avatars.githubusercontent.com/u/33714079?v=4",
+        "email": "alican15033@gmail.com",
+        "phone": "05078595930",
+        "url": "",
+        "summary": "Passionate Junior Frontend Developer. I strive to create engaging and user-friendly web experiences with a focus on responsive design. I enjoy collaborating in dynamic teams, learning from experienced professionals, and staying up-to-date with the latest technologies. With a keen eye for detail and a problem-solving mindset, I write clean and maintainable code. I'm excited about contributing to impactful projects and eager to grow both professionally and personally.",
+        "location": {
+            "countryCode": "US",
+            "address": "Turkey"
+        },
+        "profiles": [
+            {
+                "network": "LinkedIn",
+                "username": "alicanakyildiz",
+                "url": "https://www.linkedin.com/in/alicanakyildiz/"
+            }
+        ]
+    },
+    "work": [
+        {
+            "name": "Upwork",
+            "position": "Web Developer",
+            "startDate": "2023-07-31",
+            "endDate": "",
+            "highlights": [],
+            "summary": null,
+            "url": "https://www.linkedin.com/company/4827017",
+            "location": "İzmir, Turkey"
+        }
+    ],
+    "volunteer": [],
+    "education": [
+        {
+            "institution": "Anadolu University",
+            "area": "Computer Science",
+            "studyType": "Bachelor's degree",
+            "startDate": "2022-09-30",
+            "endDate": "2024-09-30",
+            "score": "",
+            "courses": []
+        }
+    ],
+    "awards": [],
+    "certificates": [],
+    "publications": [],
+    "skills": [
+        {
+            "name": "React Hooks",
+            "level": "",
+            "keywords": []
+        },
+        {
+            "name": "REST APIs",
+            "level": "",
+            "keywords": []
+        },
+        {
+            "name": "Application Programming Interfaces (API)",
+            "level": "",
+            "keywords": []
+        },
+        {
+            "name": "Git",
+            "level": "",
+            "keywords": []
+        },
+        {
+            "name": "Search Engine Optimization (SEO)",
+            "level": "",
+            "keywords": []
+        },
+        {
+            "name": "React.js",
+            "level": "",
+            "keywords": []
+        },
+        {
+            "name": "Front-End Development",
+            "level": "",
+            "keywords": []
+        },
+        {
+            "name": "Interfaces",
+            "level": "",
+            "keywords": []
+        },
+        {
+            "name": "English",
+            "level": "",
+            "keywords": []
+        },
+        {
+            "name": "HTML5",
+            "level": "",
+            "keywords": []
+        },
+        {
+            "name": "Responsive Web Design",
+            "level": "",
+            "keywords": []
+        },
+        {
+            "name": "JavaScript",
+            "level": "",
+            "keywords": []
+        },
+        {
+            "name": "Problem Solving",
+            "level": "",
+            "keywords": []
+        },
+        {
+            "name": "Tailwind CSS",
+            "level": "",
+            "keywords": []
+        },
+        {
+            "name": "Communication",
+            "level": "",
+            "keywords": []
+        },
+        {
+            "name": "Web Performance",
+            "level": "",
+            "keywords": []
+        },
+        {
+            "name": "Next.js",
+            "level": "",
+            "keywords": []
+        },
+        {
+            "name": "TypeScript",
+            "level": "",
+            "keywords": []
+        },
+        {
+            "name": "Strategy",
+            "level": "",
+            "keywords": []
+        },
+        {
+            "name": "Web Development",
+            "level": "",
+            "keywords": []
+        },
+        {
+            "name": "Cascading Style Sheets (CSS)",
+            "level": "",
+            "keywords": []
+        },
+        {
+            "name": "HTML",
+            "level": "",
+            "keywords": []
+        }
+    ],
+    "languages": [
+        {
+            "language": "English",
+            "fluency": "Native Speaker"
+        }
+    ],
+    "interests": [],
+    "references": [],
+    "projects": [],
+    "meta": {
+        "version": "v1.0.0",
+        "canonical": "https://github.com/jsonresume/resume-schema/blob/v1.0.0/schema.json"
+    }
+}
