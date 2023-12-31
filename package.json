@@ -13,6 +13,7 @@
     "@astrojs/check": "^0.3.4",
     "@astrojs/react": "^3.0.9",
     "@astrojs/tailwind": "^5.1.0",
+    "@astrojs/vercel": "^6.1.1",
     "@iconify-json/mdi": "^1.1.63",
     "@types/react": "^18.2.46",
     "@types/react-dom": "^18.2.18",
