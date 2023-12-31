@@ -27,14 +27,17 @@ With this project, you can use your LinkedIn data to create a personal website a
 
 1. Install every dependencies with `npm install` (make sure you have [Node](https://nodejs.org/en) installed)
 2. To start the development server, run `npm run dev` and go to [localhost:4321](http://localhost:4321/)
-3. You will see that your website is ready to use!
+3. You will see that your website is working!
 
 ##### Creating a CV
 
+1. run `npm run build`
+2. after complition, run `npm run preview`
+3. Go to the localhost link in the terminal
 4. Press Windows `CTRL+P`, Mac `⌘ + P` to open up the print dialog.
 5. From there, you can save your website as .pdf and use it as your CV.
 
-*Sometimes, if your website is long in terms of height, a section gets between the end of first page and the beginning of second page. In order to fix this, you need to add `page-break` class to **that** section, **not** that particular card. This will force that section to go down and not stuck.*
+*Sometimes, if your website is long in terms of height, a section gets between the end of first page and the beginning of second page. In order to fix this, you need to add `page-break` class to **that** section's card parent tag. This will force that section to go down and not stuck. Not a perfect solution but something at least. For an example, take a look `/src/components/skills/skills-card.tsx:17:107`*
 
 ### Creating a Website
 
@@ -64,3 +67,5 @@ Then copy the response and change the `default_theme` object with the response.
 #### Note
 
 While the downloaded resume file is good, it maybe not perfectly populated. Please take a look.
+
+As long as the JSON layout is same, adding things won't break the website!

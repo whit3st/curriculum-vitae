@@ -30,6 +30,11 @@ const selectedTheme = import.meta.env.PUBLIC_SELECTED_THEME as ThemeNames;
         <title>{title}</title>
         <!-- FONTS -->
         <style is:global>
+            @media print {
+                .page-break {
+                    page-break-inside: avoid;
+                }
+            }
             @font-face {
                 font-family: "Inter";
                 src: url("../fonts/Inter.ttf") format("truetype");
