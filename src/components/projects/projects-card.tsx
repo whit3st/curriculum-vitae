@@ -20,13 +20,6 @@ const ProjectsCard = ({ project }: { project: Project }) => {
             <p className={theme[selectedTheme].paragraph.card}>
                 {project.description}
             </p>
-            <ul className="list-disc list-outside ml-4">
-                {project.highlights.map(highlight => (
-                    <li className={theme[selectedTheme].paragraph.default}>
-                        {highlight}
-                    </li>
-                ))}
-            </ul>
         </article>
     );
 };

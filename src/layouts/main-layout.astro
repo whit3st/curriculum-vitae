@@ -3,10 +3,11 @@ import ResumeContext from "../context-provider/resume-context";
 import ThemeContext from "../context-provider/theme-context";
 import { themes } from "../data/themes";
 import type { ThemeNames } from "../data/themes";
+import type { Resume } from "../data/data-interface";
 const { title, desc, resume } = Astro.props as {
     title: string;
     desc: string;
-    resume: any;
+    resume: Resume;
 };
 
 const selectedTheme = import.meta.env.PUBLIC_SELECTED_THEME as ThemeNames;
@@ -28,13 +29,14 @@ const selectedTheme = import.meta.env.PUBLIC_SELECTED_THEME as ThemeNames;
             content={desc}
         />
         <title>{title}</title>
-        <!-- FONTS -->
         <style is:global>
+            /* PAGE BREAK WHILE PRINTING */
             @media print {
                 .page-break {
                     page-break-inside: avoid;
                 }
             }
+            /* FONTS */
             @font-face {
                 font-family: "Inter";
                 src: url("../fonts/Inter.ttf") format("truetype");
@@ -54,7 +56,7 @@ const selectedTheme = import.meta.env.PUBLIC_SELECTED_THEME as ThemeNames;
                 window.matchMedia("(prefers-color-scheme: dark)").matches
             ) {
                 // To allow users who prefer dark color scheme,
-                //uncomment the line below
+                // uncomment the line below
                 // document.documentElement.classList.add("dark");
             }
             // TAILWIND DARK MODE
