@@ -17,7 +17,7 @@ With this project, you can use your LinkedIn data to create a personal website a
 ### Setup
 
 1. Clone/download the repo
-2. Use [this](https://chromewebstore.google.com/detail/json-resume-exporter/caobgmmcpklomkcckaenhjlokpmfbdec) browser extension to download your data from [LinkedIn](https://www.linkedin.com/)
+2. Use [this](https://chromewebstore.google.com/detail/json-resume-exporter/caobgmmcpklomkcckaenhjlokpmfbdec) browser extension to download your data from [LinkedIn](https://www.linkedin.com/in/) profile.
 3. Rename the downloaded `.json` file to `data.json`
 4. Go to `/src/data/` and put your `data.json` file there
 
