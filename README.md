@@ -56,6 +56,10 @@ You need an **[adapter](https://docs.astro.build/en/guides/integrations-guide/ve
 
 While making this projects, I made it possible to add custom themes. Default theme is created by me in `/src/data/themes.ts` file and also I created two other themes as well.
 
+##### How to add you picture
+
+- I used GitHub profile picture in the demo. Picture has to be a link and public. You should paste the URL in `/src/data/data.json` under `basics -> image`
+
 ##### How to create a theme
 
 If you want to create your own theme, I have a few suggestions.
