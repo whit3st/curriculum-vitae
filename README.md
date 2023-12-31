@@ -49,6 +49,11 @@ You need an **[adapter](https://docs.astro.build/en/guides/integrations-guide/ve
 
 ### Customizing!
 
+##### Order of sections
+
+- You have the flexibility to alter the sequence of components in `/src/pages/index.astro` to adjust their order.
+- Also, you can delete or comment-out elements in `/src/pages/index.astro` that you do not want to show.
+
 While making this projects, I made it possible to add custom themes. Default theme is created by me in `/src/data/themes.ts` file and also I created two other themes as well.
 
 ##### How to create a theme
@@ -69,3 +74,8 @@ Then copy the response and change the `default_theme` object with the response.
 While the downloaded resume file is good, it maybe not perfectly populated. Please take a look.
 
 As long as the JSON layout is same, adding things won't break the website!
+
+
+##### Contribution
+
+Should you wish to add or modify something, opening an issue would be sufficient.
