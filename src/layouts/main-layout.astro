@@ -1,6 +1,7 @@
 ---
 import ResumeContext from "../context-provider/resume-context";
 import ThemeContext from "../context-provider/theme-context";
+import PrintMenu from '../components/print-menu/print-menu';
 import { themes } from "../data/themes";
 import type { ThemeNames } from "../data/themes";
 import type { Resume } from "../data/data-interface";
@@ -34,6 +35,10 @@ const selectedTheme = import.meta.env.PUBLIC_SELECTED_THEME as ThemeNames;
             @media print {
                 .page-break {
                     page-break-inside: avoid;
+                }
+                /* HIDE PAGE WHILE PRINTING  */
+                .page-hidden {
+                    display: none;
                 }
             }
             /* FONTS */
@@ -70,12 +75,11 @@ const selectedTheme = import.meta.env.PUBLIC_SELECTED_THEME as ThemeNames;
     <ThemeContext.Provider value={themes}>
         <ResumeContext.Provider value={resume}>
             <body class={themes[selectedTheme].body + " py-14"}>
-                <main class="container flex flex-col gap-10 font-in">
+                <PrintMenu client:idle />
+                <main class="container flex flex-col gap-10">
                     <slot />
                 </main>
             </body>
         </ResumeContext.Provider>
     </ThemeContext.Provider>
-
-
 </html>
