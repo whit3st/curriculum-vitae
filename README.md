@@ -31,9 +31,9 @@ With this project, you can use your LinkedIn data to create a personal website a
 
 ##### Creating a CV
 
-1. run `npm run build`
-2. after complition, run `npm run preview`
-3. Go to the localhost link in the terminal
+1. ~~run `npm run build`~~
+2. ~~after complition, run `npm run preview`~~
+3. ~~Go to the localhost link in the terminal~~
 4. Press Windows `CTRL+P`, Mac `⌘ + P` to open up the print dialog.
 5. From there, you can save your website as .pdf and use it as your CV.
 

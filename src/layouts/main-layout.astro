@@ -36,6 +36,7 @@ const selectedTheme = import.meta.env.PUBLIC_SELECTED_THEME as ThemeNames;
                 .page-break {
                     page-break-inside: avoid;
                 }
+                /* HIDE PAGE WHILE PRINTING  */
                 .page-hidden {
                     display: none;
                 }
@@ -75,12 +76,10 @@ const selectedTheme = import.meta.env.PUBLIC_SELECTED_THEME as ThemeNames;
         <ResumeContext.Provider value={resume}>
             <body class={themes[selectedTheme].body + " py-14"}>
                 <PrintMenu client:idle />
-                <main class="container flex flex-col gap-10 font-in">
+                <main class="container flex flex-col gap-10">
                     <slot />
                 </main>
             </body>
         </ResumeContext.Provider>
     </ThemeContext.Provider>
-
-
 </html>
