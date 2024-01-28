@@ -23,23 +23,22 @@ const EducationCard = ({ education }: { education: Education }) => {
             <p className={theme[selectedTheme].paragraph.default}>
                 {education.studyType}
             </p>
-            <p className={theme[selectedTheme].paragraph.default}>
-                {education.score.length > 0 ? "GPA " + education.score : ""}
-            </p>
             {/* COURSES */}
-            {/* <span className="flex gap-2">
-                <p className={theme[selectedTheme].paragraph.card}>Courses:</p>
-                <div className="flex flex-wrap gap-1">
-                    {education.courses.map((course, index) => (
-                        <p
-                            key={index}
-                            className={theme[selectedTheme].badge}
-                        >
-                            {course}
-                        </p>
-                    ))}
-                </div>
-            </span> */}
+            {education.courses && education.courses.length > 0 && (
+                <span className="flex flex-col gap-1 border rounded-md p-2 shadow-md shadow-black/10 page-break">
+                    <p className={theme[selectedTheme].paragraph.card}>Courses:</p>
+                    <div className="flex flex-wrap gap-2">
+                        {education.courses.map((_course, index) => (
+                            <p
+                                key={index}
+                                className={theme[selectedTheme].badge}
+                            >
+                                {_course}
+                            </p>
+                        ))}
+                    </div>
+                </span>
+            )}
         </article>
     );
 };
